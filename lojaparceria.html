@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Polly Personalizados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="topo">
+        <img src="logo.png" alt="Logo da loja" class="logo">
+        <div class="tit">
+            <h1 id="titulo">Polly Personalizados🎨 </h1>
+            <p class="fonte">Personalizados feitos com carinho e muita criatividade!</p>
+        </div>
+    </header>
+
+    <nav class="fonte">
+        <a href="#produtos">Produtos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="fonte">
+        <section class="banner">
+            <h2>Transformamos ideias em presentes únicos</h2>
+        </section>
+
+        <section id="produtos" class="produtos">
+            <h2>Nossos Produtos</h2>
+
+            <div class="card">
+                <img src="foto1.jpg" alt="Caneca personalizada">
+                <h3>Canecas</h3>
+                <p>Canecas com frases, fotos e temas personalizados.</p>
+            </div>
+
+            <div class="card">
+                <img src="foto2.jpg" alt="Azulejo personalizado">
+                <h3>Azulejo</h3>
+                <p>Exclusivo do seu jeito.</p>
+            </div>
+
+            <div class="card">
+                <img src="foto3.jpg" alt="Lembrancinhas">
+                <h3>Lembrancinhas</h3>
+                <p>Perfeitas para presentear quem você ama.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria">
+            <h2>Galeria de Fotos</h2>
+
+            <div class="fotos">
+                <img src="foto4.jpg" alt="Produto 1">
+                <img src="foto5.jpg" alt="Produto 2">
+                <img src="foto6.jpg" alt="Produto 3">
+                <img src="foto7.jpg" alt="Produto 4">
+                <img src="foto8.jpg" alt="Produto 5">
+                <img src="foto9.jpg" alt="Produto 6">
+            </div>
+        </section>
+        <div id="lista">
+            <section id="extras">
+                <h2 class="titulo-extra">Como funciona</h2>
+
+
+                <ul class="lista-nao-ordenada">
+                    <li>Produtos artesanais</li>
+                    <li>Personalização exclusiva</li>
+                    <li>Entrega com carinho</li>
+                </ul>
+
+                <ol class="lista-ordenada">
+                    <li>Escolha o produto</li>
+                    <li>Envie sua ideia</li>
+                    <li>Receba em casa</li>
+                </ol>
+
+                <p>
+                    <a href="novidade.html" class="link-teste">
+                        Veja uma novidade especial 🦋
+                    </a>
+                </p>
+
+                <img src="foto1.jpg" class="img-float" alt="Produto">
+                <p class="texto-float">
+                    Cada peça é criada com atenção aos detalhes e muito amor.
+                </p>
+            </section>
+            <section id="contato" class="contato">
+                <h2>Fale Conosco</h2>
+                <p>📱 WhatsApp: (31) 98795-8108</p>
+                <p id="insta">📷 Instagram: <a href="https://www.instagram.com/pollypersonalizados2023" target="_blank">@pollypersonalizados2023</a></p>
+            </section>
+            <section id="whats-ideia" class="contato">
+                <p>Conte sua ideia e envie direto para o WhatsApp:</p>
+
+                <input 
+                    type="text" 
+                    id="ideiaWhats"
+                    placeholder="Ex: Caneca com foto e frase ✨">
+
+                <button onclick="enviarIdeiaWhats()">
+                    Enviar ideia no WhatsApp
+                </button>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Polly Personalizados — Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

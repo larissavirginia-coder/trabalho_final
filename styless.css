@@ -1,0 +1,10 @@
+#atencao {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#canequitia{
+    width: 300px; /* Largura fixa em pixels */
+    height: 400px; /* Altura fixa em pixels */
+}

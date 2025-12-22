@@ -1,0 +1,197 @@
+#telaInicial {
+    background-image: url("prog.jpg");
+    background-size: cover;
+    min-height: 100vh; 
+}
+
+
+.entrada {
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgb(20, 20, 20); /*offset-x, offset-y, blur(desfoque), spread(sombra, que no caso não tem ne)*/
+}
+/**/
+
+.container{ /*imagens e introduçao*/
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.texto-container {
+    background: #FFFBDE;
+    border: 4px solid black;
+    border-radius: 22px;
+    padding: 11px;
+    width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.imgs {
+    width: 300px;
+    margin: 10px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+.botao-codigo {
+    position: relative;
+    padding: 14px 32px;
+    font-size: 20px;
+    font-family: "Courier New", monospace; 
+    color: #ebe833;
+    background: #0a0f14;
+    border: 2px solid #ebe833;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #ebe833;
+    box-shadow: 0 0 12px rgba(213, 216, 27, 0.4);
+    transition: 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.botao-codigo:hover {
+    background: #ebe833;
+    color: #0a0f14;
+    box-shadow: 0 0 18px #ebe833, 0 0 30px #ebe833;
+}
+
+
+.botao-codigo::after {
+    content: "_";
+    font-weight: bold;
+    margin-left: 5px;
+    animation: cursorPisca 0.6s infinite alternate;
+}
+
+@keyframes cursorPisca {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.robo {
+    width: 180px;
+    margin-bottom: 10px;
+    animation: andar 5s infinite alternate ease-in-out;
+}
+
+@keyframes andar {
+    from {
+        transform: translateX(120px);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-size: 22px;
+}
+.menuTopo {
+    text-align: center;
+    color: #ebe833;
+    padding: 10px 0;
+    background-color: black;
+    width: 100%;
+    border-bottom: 2px solid #ebe833;
+    box-shadow: 0 4px 10px rgba(235, 232, 51, 0.2);
+}
+
+/* PARA LEMBRAR! box-shadow: deslocamento-x deslocamento-y blur(desfoque) spread(aumenta ou diminui a sombra) cor;
+
+Os números dentro do rgba() representam cor + transparência.
+A sigla significa: Red, Green, Blue, Alpha
+*/
+
+.lado {
+    background-color: black;
+    border-radius: 18px;
+    padding: 15px 22px;
+    margin: 20px;
+    border: 2px solid #ebe833;
+    width: fit-content;
+    font-weight: 600;
+    color: #ebe833;
+}
+
+
+.fonte {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#img1 {
+    width: 200.26px;
+}
+
+.perguntitas {
+    background-color: #7EBCAB;
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    accent-color: #FFFBDE;
+}
+
+select{
+    background-color: #FFFBDE; 
+    cursor: pointer;
+    font-size: 18px;
+    padding: 7px 8px;
+}
+
+#botao{
+    background-color:#7EBCAB;
+    opacity: 0.9;
+    cursor: pointer;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    font-size: 17px;
+}
+
+.footer {
+    background-color: #7EBCAB;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+}
+
+#foot{
+    margin-top: 22px;
+}
+
+
+footer a:link {
+    font-size: 24px;
+    color: #2cb81f;
+}
+
+footer a:visited {
+    color: #e2e37e;
+    font-weight: lighter;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: black;
+}

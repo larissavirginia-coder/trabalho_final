@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="telaInicial">
+        <nav class="menuTopo">
+            <h2 id="titulo">Enxurrada de bits - CEFET MG</h2>
+        </nav>
+
+        <aside class="lado" id="ladoinf">    
+            <p>Prepare-se para testar seu conhecimento!</p>
+        </aside>
+
+        <div class="entrada">
+            <h1 >Quiz de programação</h1>
+            <img src="robo.gif" class="robo">
+            <button onclick="iniciarQuiz()" class="botao-codigo">Para começar, clique aqui =)</button>
+        </div>
+    </div>
+
+
+    <div class="fonte">
+        <section id="quiz" style="display:none;">
+                <header id="title">
+                    <div class="container">
+                        <img src="linguagens.png" class="imgs" id="img1">
+                        <div class="texto-container">
+                            <h1>Olá <span id="saudacao"></span> bem-vindo(a) ao quiz sobre programação web</h1>
+                            <p>Espero que goste desse quiz, o objetivo deste é juntar todos os conhecimentos aprendidos no curso de programação web no CEFET MG</p>
+                        </div>
+                        <img src="ifelse.png" class="imgs">
+                    </div>
+                </header>
+
+            <main>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 1: Qual das linguagens abaixo é de programação?</h2>
+                    <form id="linguagemprog">
+                        <input type="radio" value="errado" id="p1a" name="pergunta1">
+                        <label for="p1a">HTML</label>
+                        <input type="radio" value="errado" id="p1b" name="pergunta1">
+                        <label for="p1b">CSS</label>
+                        <input type="radio" value="errado" id="p1c" name="pergunta1">
+                        <label for="p1c">SQL</label>
+                        <input type="radio" value="certo" id="p1d" name="pergunta1">
+                        <label for="p1d">JavaScript</label><br>
+                    </form>
+                </article>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 2: Qual das seguintes alternativas é falsa em relação ao GitHub?</h2>
+                    <form>
+                        <input type="checkbox" value="errado" id="p2a" name="pergunta2">
+                        <label>É a maior plataforma de hospedagem de código-fonte</label><br>
+                        <input type="checkbox" value="certo" id="p2b" name="pergunta2">
+                        <label>No GitHub Pages há interação com banco de dados</label><br>
+                        <input type="checkbox" value="errado" id="p2c" name="pergunta2">
+                        <label>Qualquer pessoa na internet pode acessar</label><br>
+                        <input type="checkbox" value="errado" id="p2d" name="pergunta2">
+                        <label>É utilizado por diversas empresas da área de desenvolvimento</label><br>
+                    </form>
+                </article>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 3: O que é CSS?</h2>
+                    <form>
+                        <select name="pergunta3" id="p3">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="certo">Linguagem de estilo para páginas web</option>
+                            <option value="errado">Linguagem usada para estruturar conteúdo.</option>
+                            <option value="errado">Banco de dados online</option>
+                            <option value="errado">Ferramenta para editar imagens.</option>
+                        </select>
+                    </form>
+                </article>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 4: Quais os 4 operadores mais usados em JavaScript?</h2>
+                    <form id="operadores">
+                        <input type="radio" value="errado" id="p4a" name="pergunta4">
+                        <label for="p4a">&& , || , ! , ??</label>
+                        <input type="radio" value="errado" id="p4b" name="pergunta4">
+                        <label for="p4b">= , == , === , !==</label>
+                        <input type="radio" value="certo" id="p4c" name="pergunta4">
+                        <label for="p4c">+ , - , * , /</label>
+                        <input type="radio" value="errado" id="p4d" name="pergunta4">
+                        <label for="p4d">++ , -- , += , **</label><br>
+                    </form>
+                </article>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 5: Nesse contexto, o que é interpolação?</h2>
+                    <form>
+                        <input type="checkbox" value="errado" id="p5a" name="pergunta5">
+                        <label>Criar uma nova função dentro de outra função</label><br>
+                        <input type="checkbox" value="errado" id="p5b" name="pergunta5">
+                        <label>Processar dados de entrada do usuário</label><br>
+                        <input type="checkbox" value="errado" id="p5c" name="pergunta5">
+                        <label>Unir dois arquivos JavaScript em um só</label><br>
+                        <input type="checkbox" value="certo" id="p5d" name="pergunta5">
+                        <label>Inserir valores de variáveis dentro de uma string</label><br>
+                    </form>
+                </article>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 6: Qual é a ordem correta básica de estruturas dentro do body em um documento HTML?</h2>
+                    <form>
+                        <select name="pergunta6" id="p6">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="errado">main → footer → header</option>
+                            <option value="errado">section → article → footer</option>
+                            <option value="errado">footer → header → main</option>
+                            <option value="certo">header → main → footer</option>
+                        </select>
+                    </form>
+                </article>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 7: Qual a mensagem está sendo exibida no console desse site no seu computador agora?</h2>
+
+                    <form id="pergunta7">
+                        <input type="radio" name="p7" value="errado" id="p7a">
+                        <label for="p7a">Programar é transformar ideias em realidade!</label><br>
+
+                        <input type="radio" name="p7" value="errado" id="p7b">
+                        <label for="p7b">HAHAHA</label><br>
+
+                        <input type="radio" name="p7" value="errado" id="p7c">
+                        <label for="p7c">Erro: Nenhuma mensagem encontrada</label><br>
+
+                        <input type="radio" name="p7" value="certo" id="p7d">
+                        <label for="p7d">Nenhuma das alternativas acima</label><br>
+                    </form>
+                </article>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 8: Qual das alternativas abaixo explica a função parseInt?</h2>
+                    <form>
+                        <input type="checkbox" value="errado" id="p8a" name="pergunta8">
+                        <label for="p8a">
+                            A função parseInt() pega um número inteiro e tenta interpretá-lo como um valor de texto
+                        </label><br>
+
+                        <input type="checkbox" value="certo" id="p8b" name="pergunta8">
+                        <label for="p8b">
+                            A função parseInt() pega o valor de texto e tenta interpretá-lo como um número inteiro
+                        </label><br>
+
+                        <input type="checkbox" value="errado" id="p8c" name="pergunta8">
+                        <label for="p8c">
+                            Essa função não existe
+                        </label><br>
+
+                        <input type="checkbox" value="errado" id="p8d" name="pergunta8">
+                        <label for="p8d">
+                            A função parseInt() pega o valor de texto e tenta interpretá-lo como booleano
+                        </label><br>
+                    </form>
+                </article>
+
+                <article class="perguntitas">
+                    <h2>Pergunta 9: O que o código abaixo faz?</h2>
+
+                    <pre> 
+           let i = 0;
+                while (i < 3) {
+                    console.log(i);
+                    i++;
+                }
+                    </pre>
+
+                    <form>
+                        <select name="pergunta9" id="p9">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="errado">Entra em loop infinito</option>
+                            <option value="errado">Não executa nenhuma vez</option>
+                            <option value="errado">Mostra os números 1, 2 e 3 no console</option>
+                            <option value="certo">Mostra os números 0, 1 e 2 no console</option>
+                        </select>
+                    </form>
+                </article>
+                
+                <article class="perguntitas">
+                    <h2>Pergunta 10: O que acontece quando esse código é executado?</h2>
+
+                    <pre>
+     let idadeTexto = "15";
+                let idade = parseInt(idadeTexto);
+
+                        console.log(`Minha idade é ${idade}`);   
+                    </pre>
+
+                    <form>
+                        <input type="radio" name="pergunta10" id="p10a" value="certo">
+                        <label for="p10a">
+                            Converte o texto em número e mostra a idade no console
+                        </label><br>
+
+                        <input type="radio" name="pergunta10" id="p10b" value="errado">
+                        <label for="p10b">
+                            Junta duas strings sem converter o valor
+                        </label><br>
+
+                        <input type="radio" name="pergunta10" id="p10c" value="errado">
+                        <label for="p10c">
+                            Gera um erro no código
+                        </label><br>
+
+                        <input type="radio" name="pergunta10" id="p10d" value="errado">
+                        <label for="p10d">
+                            Mostra apenas o texto, sem número
+                        </label>
+                    </form>
+                </article>
+
+                <br>
+                <button type="button" onclick="calcularPontuacao()" id="botao">Enviar</button>
+                
+            </main>
+
+        <footer>
+            <p class="footer" id="foot">Desenvolvido por Larissa Virgínia💛</p>
+            <p class="footer">&copy; Todos os direitos e neurônios reservados! =) </p>
+            <p class="footer">Para conhecer a melhor loja que temos parceria...
+                <a href="lojaparceria.html" target="_blank">Clique aqui</a>
+            </p>
+        </footer>
+    </section>
+
+</body>
+</html>

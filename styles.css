@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    background-color: #fffaf0;
+    color: #333;
+}
+
+header {
+    background-color: #ff8fab;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+nav {
+    background-color: #ffb3c6;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background-color: #ffe5ec;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.produtos {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.galeria {
+    background-color: #ffe5ec;
+    padding: 40px;
+    text-align: center;
+}
+
+.fotos img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#contato {
+    text-align: center;
+    flex: 1;
+    margin-left: 200px;
+    font-size: 23px;
+}
+
+footer {
+    background-color: #ff8fab;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.fonte {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.topo {
+    background-color: #ff8fab;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    padding-right: 90px;;
+}
+
+.tit{
+    justify-content: flex-end;
+}
+
+
+
+
+.lista-nao-ordenada {
+    margin: 0;
+    list-style: square;
+}
+
+.lista-ordenada {
+    margin: 0;
+    list-style: upper-roman;
+}
+
+#lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+li {
+    margin: 6px 0;
+}
+
+/* ================= :FOCUS ================= */
+input:focus {
+    outline: none;
+    border: 2px solid #ff8fab;
+    background-color: #fff0f5;
+}
+
+/* ================= :LINK ================= */
+.link-teste:link {
+    color: #2fd66f;
+    text-decoration: none;
+}
+
+.link-teste:visited {
+    color: #ff8fab;
+}
+
+/* TRANSITION (ease default) */
+.link-teste {
+    transition: color 0.4s ease;
+}
+
+.link-teste:hover {
+    color: black;
+}
+
+.link-teste:active {
+    color: red;
+}
+
+.titulo-extra::before {
+    content: "🦋 ";
+}
+
+::selection {
+    background-color: #ff8fab;
+    color: white;
+}
+
+.img-float {
+    flex-wrap: wrap;
+    width: 180px;
+    float: left;
+    margin: 10px 20px 10px 0;
+    border-radius: 10px;
+}
+
+.texto-float {
+    max-width: 200px;
+}
+
+.card {
+    transition: transform 0.4s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* linear */
+.banner {
+    animation: aparecer 1s linear;
+}
+
+/* ease-out */
+.fotos img {
+    transition: transform 0.4s ease-out;
+}
+
+.fotos img:hover {
+    transform: scale(1.1);
+}
+
+/* cubic-bezier */
+.logo {
+    transition: transform 0.6s cubic-bezier(0.68,-0.55,0.27,1.55);
+}
+
+.logo:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* animação */
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#whats-ideia {
+    text-align: center;
+    padding: 20px;
+}
+
+#whats-ideia input {
+    padding: 10px;
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#whats-ideia button {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #25D366;
+    color: white;
+    cursor: pointer;
+}
+
+#whats-ideia button:hover {
+    background-color: #1ebe5d;
+}
+
+#whats-ideia {
+    margin: 30px;
+}
+
+#extras {
+    margin-left: 150px;
+}
